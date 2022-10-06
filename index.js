@@ -12,9 +12,9 @@ function getAdvice() {
     .then((res) => res.json())
     .then((res) => {
       const data = res.slip;
-
       adviceId.textContent = data.id;
       adviceDisplay.textContent = data.advice;
+      loader.classList.remove("active");
     });
 }
 

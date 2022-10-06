@@ -99,10 +99,26 @@ main .container .flexbox .active {
     transform: rotate(360deg);
   }
 }
-main .container h1 {
+main .container .flexbox h1 {
   color: hsl(150deg, 100%, 66%);
   font-size: 0.85rem;
   letter-spacing: 5px;
+  text-transform: uppercase;
+}
+main .container .flexbox .divider {
+  width: 444px;
+  height: 16px;
+  margin: 0 auto;
+  background: url(..//../images/pattern-divider-desktop.svg) center/cover;
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 555px) {
+  main .container .flexbox .divider {
+    width: 295px;
+    height: 16px;
+    background: url(..//../images/pattern-divider-mobile.svg) center/cover;
+  }
 }
 main .container .switch-advice {
   display: flex;
@@ -111,12 +127,18 @@ main .container .switch-advice {
   width: 65px;
   height: 65px;
   margin: 0 auto;
+  border: none;
   border-radius: 50px;
   transform: translateY(5px);
   background-color: hsl(150deg, 100%, 66%);
   cursor: pointer;
   /********************Media********************/
   /*********************************************/
+}
+main .container .switch-advice .dice {
+  width: 24px;
+  height: 24px;
+  background: url(..//..//images/icon-dice.svg) center/cover;
 }
 main .container .switch-advice:hover {
   box-shadow: 0px 0px 15px 20px hsla(150deg, 100%, 66%, 0.3);

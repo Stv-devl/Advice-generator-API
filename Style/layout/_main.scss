@@ -59,23 +59,43 @@ main {
           }
         }
       }
-    }
+      h1 {
+        color: $NeonGreen;
+        font-size: 0.85rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
+      .divider {
+        width: 444px;
+        height: 16px;
+        margin: 0 auto;
+        background: url(..//../images/pattern-divider-desktop.svg) center/cover;
 
-    h1 {
-      color: $NeonGreen;
-      font-size: 0.85rem;
-      letter-spacing: 5px;
+        /********************Media********************/
+        @media screen and (max-width: 555px) {
+          width: 295px;
+          height: 16px;
+          background: url(..//../images/pattern-divider-mobile.svg) center/cover;
+        }
+        /*********************************************/
+      }
     }
-
     .switch-advice {
       @include center;
       width: 65px;
       height: 65px;
       margin: 0 auto;
+      border: none;
       border-radius: 50px;
       transform: translateY(5px);
       background-color: $NeonGreen;
       cursor: pointer;
+
+      .dice {
+        width: 24px;
+        height: 24px;
+        background: url(..//..//images/icon-dice.svg) center/cover;
+      }
 
       &:hover {
         box-shadow: 0px 0px 15px 20px hsla(150, 100%, 66%, 0.3);
