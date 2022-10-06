@@ -1,0 +1,136 @@
+/**********************************************************************/
+/*setting*/
+/**********************************************************************/
+/****************************setting fonts***************************/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+/***************************Setting colors***************************/
+/****************************Setting page****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-block: 0;
+  outline: none;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: hsl(218deg, 23%, 16%);
+  font-size: 24px;
+  color: hsl(193deg, 38%, 86%);
+}
+
+a,
+a:visited {
+  color: rgb(85, 5, 5);
+}
+
+/***************************Setting mixxin***************************/
+/**********************************************************************/
+/*Main*/
+/**********************************************************************/
+/*center element in page*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main .container {
+  width: 540px;
+  height: 332px;
+  background-color: hsl(217deg, 19%, 24%);
+  border-radius: 15px;
+  padding: 52px 20px 0 20px;
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 555px) {
+  main .container {
+    width: 95%;
+    height: 400px;
+  }
+}
+main .container .flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 35px;
+}
+main .container .flexbox .advice-display {
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 555px) {
+  main .container .flexbox .advice-display {
+    width: 90%;
+    height: 150px;
+  }
+}
+main .container .flexbox .active {
+  border: 8px solid hsla(150deg, 100%, 66%, 0.3);
+  border-top: 8px solid hsl(150deg, 100%, 66%);
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+main .container h1 {
+  color: hsl(150deg, 100%, 66%);
+  font-size: 0.85rem;
+  letter-spacing: 5px;
+}
+main .container .switch-advice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+  border-radius: 50px;
+  transform: translateY(5px);
+  background-color: hsl(150deg, 100%, 66%);
+  cursor: pointer;
+  /********************Media********************/
+  /*********************************************/
+}
+main .container .switch-advice:hover {
+  box-shadow: 0px 0px 15px 20px hsla(150deg, 100%, 66%, 0.3);
+}
+@media screen and (max-width: 555px) {
+  main .container .switch-advice {
+    transform: translateY(28px);
+  }
+}
+
+/*****align footer and set size and color*****/
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 20px auto;
+  color: rgb(1, 1, 1);
+}/*# sourceMappingURL=index.css.map */
