@@ -121,6 +121,9 @@ main .container .flexbox .divider {
   }
 }
 main .container .switch-advice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 65px;
   height: 65px;
   margin: 0 auto;
@@ -128,9 +131,6 @@ main .container .switch-advice {
   border-radius: 50px;
   transform: translateY(5px);
   background-color: hsl(150deg, 100%, 66%);
-  background-image: url(..//..//images/icon-dice.svg);
-  background-position: center;
-  background-repeat: no-repeat;
   cursor: pointer;
   /********************Media********************/
   /*********************************************/
@@ -141,6 +141,26 @@ main .container .switch-advice:hover {
 @media screen and (max-width: 555px) {
   main .container .switch-advice {
     transform: translateY(28px);
+  }
+}
+main .container .active {
+  -webkit-animation: buttonAnim 1s forwards;
+          animation: buttonAnim 1s forwards;
+}
+@-webkit-keyframes buttonAnim {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes buttonAnim {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

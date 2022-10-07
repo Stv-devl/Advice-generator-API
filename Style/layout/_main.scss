@@ -81,6 +81,7 @@ main {
       }
     }
     .switch-advice {
+      @include center;
       width: 65px;
       height: 65px;
       margin: 0 auto;
@@ -88,20 +89,28 @@ main {
       border-radius: 50px;
       transform: translateY(5px);
       background-color: $NeonGreen;
-      background-image: url(..//..//images/icon-dice.svg);
-      background-position: center;
-      background-repeat: no-repeat;
       cursor: pointer;
 
       &:hover {
         box-shadow: 0px 0px 15px 20px hsla(150, 100%, 66%, 0.3);
       }
-
       /********************Media********************/
       @media screen and (max-width: 555px) {
         transform: translateY(28px);
       }
       /*********************************************/
+    }
+    .active {
+      animation: buttonAnim 1s forwards;
+
+      @keyframes buttonAnim {
+        0% {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 }
