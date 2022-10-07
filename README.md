@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution]()
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub/advicegeneratorapp-with-vanilla-js-YJzdkt9kkr)
 - Live Site URL: [Live website](https://stv-devl.github.io/Advice-generator-API/)
 
 ## My process
@@ -44,16 +44,17 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- SASS/SCSS
 - Vanilla JS
 - API
 
 ### What I learned
 
-I practice to use API and FETCH
+API and Fetch
 
 ### Continued development
 
-Try more complex API exercice
+Try more complex API exercices
 
 ## Author
 
