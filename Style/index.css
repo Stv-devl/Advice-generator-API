@@ -24,7 +24,7 @@ body {
 
 a,
 a:visited {
-  color: rgb(85, 5, 5);
+  color: rgb(141, 37, 37);
 }
 
 /***************************Setting mixxin***************************/
@@ -144,8 +144,8 @@ main .container .switch-advice:hover {
   }
 }
 main .container .active {
-  -webkit-animation: buttonAnim 1s forwards;
-          animation: buttonAnim 1s forwards;
+  -webkit-animation: buttonAnim 1.5s forwards;
+          animation: buttonAnim 1.5s forwards;
 }
 @-webkit-keyframes buttonAnim {
   0% {
@@ -169,5 +169,5 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   margin: 20px auto;
-  color: rgb(1, 1, 1);
+  color: rgb(201, 193, 193);
 }/*# sourceMappingURL=index.css.map */
